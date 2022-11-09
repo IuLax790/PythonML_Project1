@@ -11,8 +11,8 @@ import warnings
 warnings.filterwarnings("ignore")
 def warn(*args,**kwargs):
     pass
-Credit_Fraud = pd.read_csv("C:\\Information_Science\\למידת מכונה\\creditcard_train.csv")
-Credit_Fraud_test = pd.read_csv("C:\\Information_Science\\למידת מכונה\\creditcard_test.csv")
+Credit_Fraud = pd.read_csv("creditcard_train.csv")
+Credit_Fraud_test = pd.read_csv("creditcard_test.csv")
 
 X = Credit_Fraud.iloc[:,[2,29]].values
 y = Credit_Fraud.iloc[:, 30].values
@@ -43,4 +43,3 @@ print(sns.countplot(y_smote))
 print(sns.countplot(pred))
 result = pd.DataFrame(pred)
 result.columns = ["prediction"]
-print(result.to_csv("C:\\Information_Science\\למידת מכונה\\SVM_y_ex2.csv"))
