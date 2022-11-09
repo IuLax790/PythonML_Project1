@@ -12,7 +12,7 @@ def warn(*args,**kwargs):
     pass
 warnings.warn = warn
 # Importing the dataset
-X = pd.read_csv("C:\\Information_Science\\למידת מכונה\\Titanic_train.csv")
+X = pd.read_csv("Titanic_train.csv")
 y=X.pop("Survived")
 print(X)
 print(y)
@@ -62,7 +62,6 @@ print(plt.show())
 predict = regressor.predict(X)
 result = pd.DataFrame(predict)
 result.columns = ["prediction"]
-print(result.to_csv("C:\\Information_Science\\למידת מכונה\\RF_y_ex1.csv"))
 
 X_grid = np.arange(min(X), max(X), 0.1) #we get a vector
 X_grid = X_grid.reshape((len(X_grid), 1)) #we need a matrix
