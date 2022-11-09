@@ -38,4 +38,3 @@ result = model.predict(vect)
 print(result)
 result = pd.DataFrame(pred)
 result.columns = ["prediction"]
-print(result.to_csv("C:\\Information_Science\\למידת מכונה\\DNN_y.csv"))
