@@ -35,5 +35,4 @@ print(classification_report(y_test,pred))
 KNN_y = clf.predict(X_test)
 result = pd.DataFrame(pred)
 result.columns = ["prediction"]
-print(result.to_csv("C:\\Information_Science\\למידת מכונה\\KNN_y_ex2.csv"))
 
