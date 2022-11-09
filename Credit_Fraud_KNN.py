@@ -12,8 +12,8 @@ def warn(*args,**kwargs):
 warnings.warn =warn
 cmap = ListedColormap(['#FF0000','#00FF00','#0000FF'])
 
-Credit_Fraud = pd.read_csv("C:\\Information_Science\\למידת מכונה\\creditcard_train.csv")
-Credit_Fraud_test = pd.read_csv("C:\\Information_Science\\למידת מכונה\\creditcard_test.csv")
+Credit_Fraud = pd.read_csv("creditcard_train.csv")
+Credit_Fraud_test = pd.read_csv("creditcard_test.csv")
 X1 = Credit_Fraud.iloc[:,:-1].values
 y1 = Credit_Fraud.iloc[:, 30].values
 X2 = Credit_Fraud_test.iloc[:,:-1].values
