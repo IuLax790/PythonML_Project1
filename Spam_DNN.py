@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 import skf as skf
 
-DataSet = pd.read_csv("C:\\Information_Science\\למידת מכונה\\spam_train.csv",encoding="latin-1")
-Dataset_Test = pd.read_csv("C:\\Information_Science\\למידת מכונה\\spam_test.csv",encoding="latin-1")
+DataSet = pd.read_csv("spam_train.csv",encoding="latin-1")
+Dataset_Test = pd.read_csv("spam_test.csv",encoding="latin-1")
 DataSet['v1']=DataSet["v1"].map({"ham":0,"spam":1})
 from sklearn.feature_extraction.text import CountVectorizer
 cv = CountVectorizer()
