@@ -72,4 +72,3 @@ print(predicted_y)
 y_pred = regressor.predict(X_test)
 result = pd.DataFrame(y_pred)
 result.columns = ["prediction"]
-print(result.to_csv("C:\\Information_Science\\למידת מכונה\\predicted_y_ex4.csv"))
