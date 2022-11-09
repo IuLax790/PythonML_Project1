@@ -10,7 +10,7 @@ def warn(*args,**kwargs):
     pass
 warnings.warn = warn
 
-Titanic = pd.read_csv("C:\\Information_Science\\למידת מכונה\\Titanic_train.csv")
+Titanic = pd.read_csv("Titanic_train.csv")
 columns_target = ['Survived']
 columns_train = ['Pclass','Age']
 X = Titanic[columns_train]
@@ -33,7 +33,6 @@ print(y_pred)
 
 result = pd.DataFrame(y_pred)
 result.columns = ["prediction"]
-print(result.to_csv("C:\\Information_Science\\למידת מכונה\\LR_y_ex1.csv"))
 
 from sklearn.metrics import confusion_matrix,classification_report
 cm = confusion_matrix(y_test,y_pred)
