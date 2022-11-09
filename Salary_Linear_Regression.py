@@ -5,8 +5,8 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-Salary = pd.read_csv("C:\\Information_Science\\למידת מכונה\\salary_train.csv")
-Salary_test = pd.read_csv("C:\\Information_Science\\למידת מכונה\\salary_test.csv")
+Salary = pd.read_csv("salary_train.csv")
+Salary_test = pd.read_csv("salary_test.csv")
 print(Salary_test)
 X = Salary.iloc[:, :-1].values
 
